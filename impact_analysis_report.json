@@ -1,0 +1,98 @@
+{
+  "baseline": {
+    "model": "Random Forest",
+    "metrics": {
+      "f1_score": 0.8913043478260869,
+      "auc_roc": 0.9480448932992767,
+      "precision": 0.9647058823529412,
+      "recall": 0.8282828282828283
+    }
+  },
+  "drift_scenarios": [
+    {
+      "scenario": "Drift 1",
+      "n_samples": 15000,
+      "fraud_rate": 0.0019333333333333333,
+      "metrics": {
+        "f1_score": 0.0,
+        "auc_roc": 0.418344,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "deltas": {
+        "f1_score": -0.891304,
+        "auc_roc": -0.5297,
+        "precision": -0.964706,
+        "recall": -0.828283
+      }
+    },
+    {
+      "scenario": "Drift 2",
+      "n_samples": 15000,
+      "fraud_rate": 0.0016,
+      "metrics": {
+        "f1_score": 0.0,
+        "auc_roc": 0.524605,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "deltas": {
+        "f1_score": -0.891304,
+        "auc_roc": -0.42344,
+        "precision": -0.964706,
+        "recall": -0.828283
+      }
+    },
+    {
+      "scenario": "Drift 3",
+      "n_samples": 18000,
+      "fraud_rate": 0.005222222222222222,
+      "metrics": {
+        "f1_score": 0.955556,
+        "auc_roc": 1.0,
+        "precision": 1.0,
+        "recall": 0.914894
+      },
+      "deltas": {
+        "f1_score": 0.064251,
+        "auc_roc": 0.051955,
+        "precision": 0.035294,
+        "recall": 0.086611
+      }
+    },
+    {
+      "scenario": "Drift 4",
+      "n_samples": 15000,
+      "fraud_rate": 0.0016666666666666668,
+      "metrics": {
+        "f1_score": 0.0,
+        "auc_roc": 0.554391,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "deltas": {
+        "f1_score": -0.891304,
+        "auc_roc": -0.393654,
+        "precision": -0.964706,
+        "recall": -0.828283
+      }
+    },
+    {
+      "scenario": "Drift 5",
+      "n_samples": 15000,
+      "fraud_rate": 0.02,
+      "metrics": {
+        "f1_score": 0.636364,
+        "auc_roc": 0.873244,
+        "precision": 1.0,
+        "recall": 0.466667
+      },
+      "deltas": {
+        "f1_score": -0.254941,
+        "auc_roc": -0.074801,
+        "precision": 0.035294,
+        "recall": -0.361616
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-04-07T13:40:53.272907",
+  "dataset": "creditcard.csv",
+  "baseline_model": "Random Forest",
+  "test_set_size": 56962,
+  "metrics": {
+    "f1_score": 0.8913043478260869,
+    "auc_roc": 0.9480448932992767,
+    "precision": 0.9647058823529412,
+    "recall": 0.8282828282828283
+  },
+  "confusion_matrix": [
+    [
+      56860,
+      3
+    ],
+    [
+      17,
+      82
+    ]
+  ],
+  "class_distribution": {
+    "legitimate": 56863,
+    "fraud": 99
+  }
+}
